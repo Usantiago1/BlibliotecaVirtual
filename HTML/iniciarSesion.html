@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/inicarSesion.css" type="text/css">
-    <title>Biblioteca virtual | Iniciar sesión</title>
+    <title>Galeria de arte | Iniciar sesión</title>
 </head>
 <body>
 
 
     <div class="contenedor">
-        <form action="" class="form">
+        <form action="" class="form" id="form">
             <div class="header">
                 <h1 class="titulo">Iniciar sesión</h1>
             </div>
 
-            <label for="numero" class="form-label">Numero Telefonico :</label>
-            <input type="text" id="numero" class="form-input" placeholder="Escribe tu numero telefonico">
+            <label for="correo" class="form-label">Correo:</label>
+            <input id="email" type="email" id="numero" class="form-input" placeholder="Escribe tu correo electronico">
 
             <label for="contraseña" class="form-label">Contraseña :</label>
-            <input type="password" id="password" class="form-input" placeholder="Escribe tu cotraseña">
+            <input id="password" type="password" class="form-input" placeholder="Escribe tu cotraseña">
 
-            <input type="submit" class="btn-submit" value="Ingresar">
+            <input id="btn-submit" type="submit" class="btn-submit" value="Ingresar">
         </form>
 
     </div>
-    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../JavaScript/validacionLogin.js"></script>
 </body>
 </html>
